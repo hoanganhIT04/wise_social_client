@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AuthComponent from './views/AuthComponent.vue';
-import IndexComponent from './views/IndexComponent.vue';
-import MyProfileComponent from './views/MyProfileComponent.vue';
-import UserProfileComponent from './views/UserProfileComponent.vue';
-import MessageComponent from './views/MessageComponent.vue';
+import AuthComponent from '@/views/AuthComponent.vue'
+import IndexComponent from '@/views/IndexComponent.vue'
+import MessageComponent from '@/views/MessageComponent.vue'
+import MyProfileComponent from '@/views/MyProfileComponent.vue'
+import UserProfileComponent from '@/views/UserProfileComponent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
