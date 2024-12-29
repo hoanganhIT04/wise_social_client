@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ChatComponent from '@/components/ChatComponent.vue';
 import FriendRequestComponent from '@/components/FriendRequestComponent.vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import MostFollowerComponent from '@/components/MostFollowerComponent.vue';
@@ -62,6 +63,7 @@ import UserProfileComponent from '@/components/UserProfileComponent.vue';
             </div>
         </main>
         <!--chatbox-list end-->
+        <ChatComponent/>
     </div>
 
 </template>

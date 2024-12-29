@@ -394,8 +394,9 @@ import axios from 'axios';
                     }).then(function (res) {
                         // Api response success
                         if (res.data.code == 200) {
-                            console.log(res.data.data.plainTextToken);
-                            //window.location.href = "/index";
+                            //save data to session storage
+                            sessionStorage.setItem("token", res.data.data.plainTextToken);
+                            window.location.href = "/index";
                         } else {
                             alert(res.data.message);
                         }
